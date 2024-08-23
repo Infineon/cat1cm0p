@@ -33,16 +33,27 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 #### CAT1C
 
+* [COMPONENT_DUAL_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_DUAL_CM0P_SLEEP/README.md)
+
+    This image is meant for dual CM7 core (CM7_0/1) CAT1C device applications. This image starts both CM7_0 and CM7_1 core at CY_CORTEX_M7_0_APPL_ADDR and CY_CORTEX_M7_1_APPL_ADDR respectively and puts CM0+ core into a deep sleep mode.
+
+* [COMPONENT_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_CM0P_SLEEP/README.md)
+
+    This image is meant for single CM7 core (CM7_0) device applications. This image starts CM7_0 core at CY_CORTEX_M7_0_APPL_ADDR and puts CM0+ core into a deep sleep mode.
+
 * [COMPONENT_XMC7xDUAL_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_XMC7xDUAL_CM0P_SLEEP/README.md)
 
-    This image is meant for dual CM7 core (CM7_0/1) XMC7xxx device. This image starts both CM7_0 and CM7_1 core at CY_CORTEX_M7_0_APPL_ADDR and CY_CORTEX_M7_1_APPL_ADDR respectively and puts CM0+ core into a deep sleep mode.
+    This image is meant for dual CM7 core (CM7_0/1) XMC7xxx device. This image starts both CM7_0 and CM7_1 core at CY_CORTEX_M7_0_APPL_ADDR and CY_CORTEX_M7_1_APPL_ADDR respectively and puts CM0+ core into a deep sleep mode.  Not recommended for new projects; use the COMPONENT_DUAL_CM0P_SLEEP for new projects.
 
 * [COMPONENT_XMC7x_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_XMC7x_CM0P_SLEEP/README.md)
 
-    This image is meant for single CM7 core (CM7_0) XMC7xxx device. This image starts CM7_0 core at CY_CORTEX_M7_0_APPL_ADDR and puts CM0+ core into a deep sleep mode.
+    This image is meant for single CM7 core (CM7_0) XMC7xxx device. This image starts CM7_0 core at CY_CORTEX_M7_0_APPL_ADDR and puts CM0+ core into a deep sleep mode.  Not recommended for new projects; use the COMPONENT_CM0P_SLEEP for new projects.
 
 ### What Changed?
 
+#### v1.6.0
+* Adds CAT1C support for Traveo II Cluster 2D6M devices.
+* Renames the CAT1C component names to be more generic.  Previous XMC7x and XMC7xDUAL images are still available, but not recommended for new projects.
 #### v1.5.0
 * Adds new support for Traveo II Body Entry 512K and 2M devices, and updates CM0P allocations for TVIIBE1M device.
 #### v1.4.0
@@ -81,4 +92,4 @@ Use the following links for more information, as needed:
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company), 2023.
+© Cypress Semiconductor Corporation (an Infineon company), 2024.

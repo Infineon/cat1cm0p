@@ -39,6 +39,16 @@ is no need to specify a particular image.
 
 ### CAT1C Images
 
+* [COMPONENT_DUAL_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_DUAL_CM0P_SLEEP/README.md)
+
+    This image starts up both CM7 cores (CM7_0/CM7_1) on CAT1C devices at CY_CORTEX_M7_0_APPL_ADDR and CY_CORTEX_M7_1_APPL_ADDR respectively and then puts the CM0+ core into a deep sleep mode.
+
+    This component is not compatible with single CM7 core devices.
+
+* [COMPONENT_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_CM0P_SLEEP/README.md)
+
+    This image starts up the first CM7 core (CM7_0) on CAT1C devices at CY_CORTEX_M7_0_APPL_ADDR and puts the CM0+ core into a deep sleep mode.
+
 * [COMPONENT_XMC7xDUAL_CM0P_SLEEP](./COMPONENT_CAT1C/COMPONENT_XMC7xDUAL_CM0P_SLEEP/README.md)
 
     This image is meant for dual CM7 core (CM7_0/1) XMC7xxx device. This image starts both CM7_0 and CM7_1 core at CY_CORTEX_M7_0_APPL_ADDR and CY_CORTEX_M7_1_APPL_ADDR respectively and puts CM0+ core into a deep sleep mode.
@@ -53,4 +63,4 @@ Use the following links for more information, as needed:
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company), 2023.
+© Cypress Semiconductor Corporation (an Infineon company), 2023-2024.
