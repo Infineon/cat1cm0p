@@ -51,6 +51,8 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 ### What Changed?
 
+#### v1.7.0
+* BLESS FW update to v5.0.13.492
 #### v1.6.0
 * Adds CAT1C support for Traveo II Cluster 2D6M devices.
 * Renames the CAT1C component names to be more generic.  Previous XMC7x and XMC7xDUAL images are still available, but not recommended for new projects.
