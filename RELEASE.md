@@ -51,6 +51,8 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 ### What Changed?
 
+#### v1.8.0
+* BLESS FW update to v5.0.14.511
 #### v1.7.0
 * BLESS FW update to v5.0.13.492
 #### v1.6.0
